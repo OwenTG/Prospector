@@ -173,10 +173,14 @@ public class Deck : MonoBehaviour {
 			}
 			
 			card.def = GetCardDefinitionByRank(card.rank);
-			
+
+            AddDecorators(card);
+
+            return card;
+
 			// Add Decorators
 			foreach (Decorator deco in decorators) {
-				tGO = Instantiate(prefabSprite) as GameObject;
+                tGO = Instantiate(prefabSprite) as GameObject;
 				tSR = tGO.GetComponent<SpriteRenderer>();
 				if (deco.type == "suit") {
 					tSR.sprite = dictSuits[card.suit];
