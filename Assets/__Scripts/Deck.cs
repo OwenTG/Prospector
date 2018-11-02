@@ -174,9 +174,9 @@ public class Deck : MonoBehaviour {
 			
 			card.def = GetCardDefinitionByRank(card.rank);
 
-            AddDecorators(card);
+          //  AddDecorators(card);
 
-            return card;
+          //  return card;
 
 			// Add Decorators
 			foreach (Decorator deco in decorators) {
