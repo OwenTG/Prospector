@@ -114,3 +114,8 @@ public bool faceUp
         back.SetActive(!value);
     }
 }
+
+virtual public void OnMouseUpAsButton()
+{
+    print (name);
+}
